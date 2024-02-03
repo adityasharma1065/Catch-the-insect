@@ -1,0 +1,166 @@
+@font-face{
+    font-family: "pixel";
+    src: url(./PixelEmulator-xq08.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'pixel';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page{ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #27005D;
+    position: relative;
+    
+}
+#page3{
+    background-image: url(./grass_pixel_art_textures_by_txturs_d8hedyc-375w-2x.jpg);
+    /* filter: blur(1px); */
+    /* filter:contrast(70%); */
+}
+#insects img{
+    backdrop-filter: blur(0px);
+    filter:contrast(110%);
+    animation-name: anime;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+h1{
+    font-size: 60px;
+    color: #E4F1FF;
+    
+}
+button{
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #E4F1FF;
+    background-color: #27005D;
+    border: 1px solid #E4F1FF;
+    transition: all ease 0.3s;
+}
+button:active{
+    scale: 0.95;
+}
+button:hover{
+    background-color: #E4F1FF;
+    border: 1px solid #27005D;
+    color: #27005D;
+}
+h2{
+    font-size: 60px;
+    color: #E4F1FF;
+}
+.creature img{
+    height: 100%;
+
+}
+H3{
+    color: #9400FF;
+}
+.creature{
+    margin-top: 25PX;
+    padding: 20px;
+    border: 1px solid #E4F1FF;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+}
+.creature:active{
+    scale: 0.95;
+}
+.creature:hover{
+    background-color:#E4F1FF ;
+    /* color: #27005D; */
+}
+.creatures{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#score{
+    top: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+#countdown h1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 350px;
+}
+#score h4{
+    color: #fff;
+    letter-spacing: 2px;
+}
+#insects img{
+    height: 100px;
+    position: absolute;
+    
+    
+}
+
+#scoreboard{
+    height: 100%;
+    width: 100%;
+    background-color: #E4F1FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+    transition: all ease 0.3s;
+}
+#scoreboard h2{
+    color: #9400FF;
+}
+
+@keyframes anime {
+    0%{
+        transform: translate(-100%,100%);
+    }
+    20%{
+        transform: translate(100%,-100%);
+    }
+    40%{
+        transform: translate(-100%,-100%);
+    }
+    60%{
+        transform: translate(100%,100%);
+    }
+    80%{
+        transform: translate(-100%,100%);
+    }
+    100%{
+        transform: translate(50%,0%);
+    }
+}
