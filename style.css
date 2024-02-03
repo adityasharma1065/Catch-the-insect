@@ -35,10 +35,7 @@ html,body{
 #insects img{
     backdrop-filter: blur(0px);
     filter:contrast(110%);
-    animation-name: anime;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: anime 4s linear infinite;
     
 }
 h1{

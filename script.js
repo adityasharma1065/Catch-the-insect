@@ -1,12 +1,15 @@
 var arr=document.querySelectorAll(".page")
 var playbtn=document.querySelector("button")
 var insects=document.querySelector("#insects")
+var insects_img=document.querySelector("#insects img")
 var time=document.querySelector("#time span")
 var scoree=document.querySelector("#scoree span")
 var scoreboard=document.querySelector("#scoreboard")
 var boardres=document.querySelector("#board span")
 var countdown=document.querySelector("#countdown h1")
 var score=0;
+
+var duration = prompt("Game Duration (sec):");
 
 playbtn.addEventListener("click",function(){
     arr[1].style.transform="translateY(-100%)"
@@ -38,7 +41,7 @@ creatures.forEach(function(i){
 
             createimg();
            onClick();
-                    
+
         },2000)
     var timepointer=0    
     var timeinterval=setInterval(function(){
@@ -54,7 +57,7 @@ creatures.forEach(function(i){
         scoreboard.style.scale="1";
         boardres.innerHTML=`${score}`;
 
-    },10000)   
+    },duration*1000)   
     
     },4000)
 })
