@@ -6,6 +6,7 @@ var time=document.querySelector("#time span")
 var scoree=document.querySelector("#scoree span")
 var scoreboard=document.querySelector("#scoreboard")
 var boardres=document.querySelector("#board span")
+var boardrestime=document.querySelector("#boarde span")
 var countdown=document.querySelector("#countdown h1")
 var score=0;
 
@@ -56,6 +57,7 @@ creatures.forEach(function(i){
         clearInterval(timeinterval);
         scoreboard.style.scale="1";
         boardres.innerHTML=`${score}`;
+        boardrestime.innerHTML=`${duration} secs`;
 
     },duration*1000)   
     

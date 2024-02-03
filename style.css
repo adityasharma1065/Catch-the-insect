@@ -132,10 +132,12 @@ H3{
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     scale: 0;
     transition: all ease 0.3s;
+    padding: 400px;
 }
 #scoreboard h2{
     color: #9400FF;
