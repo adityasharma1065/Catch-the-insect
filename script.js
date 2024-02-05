@@ -10,7 +10,7 @@ var boardrestime=document.querySelector("#boarde span")
 var countdown=document.querySelector("#countdown h1")
 var score=0;
 
-var duration = prompt("Game Duration (sec):");
+var duration = prompt("Game Duration (sec) [only enter the number]\neg. 12");
 
 playbtn.addEventListener("click",function(){
     arr[1].style.transform="translateY(-100%)"
