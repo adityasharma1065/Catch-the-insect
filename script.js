@@ -16,6 +16,7 @@ playbtn.addEventListener("click",function(){
     arr[1].style.transform="translateY(-100%)"
 })
 
+//last
 var count=0;
 var creatures=document.querySelectorAll(".creature")
 creatures.forEach(function(i){
